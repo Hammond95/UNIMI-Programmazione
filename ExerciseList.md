@@ -22,7 +22,7 @@
         la ’a’ è ripetuta 3 volte, tutte le altre lettere sono ripetute 1 volta)
 + B18   Scrivete un programma che legga un certo numero di interi (al massimo 100), terminati dall’intero -1, e che alla fine ristampi la cifra delle unità di ciascuno.
 + B19   Scrivete un metodo statico di nome f che data come argomenti una stringa restituisca come risultato la sua prima metà (arrotondata per difetto se la stringa ha
-        lunghezza dispari).  Ad esempio, se la stringa `e “ciao” il metodo deve restituire “ci”, mentre se la stringa `e “ritardo” deve restituire “rit”.
+        lunghezza dispari).  Ad esempio, se la stringa è “ciao” il metodo deve restituire “ci”, mentre se la stringa è “ritardo” deve restituire “rit”.
 + B20   Scrivete un metodo statico di nome salta che data una stringa x e dato un intero r , restituisca la stringa ottenuta prendendo un carattere ogni r
         (a partire dal primo). Ad esempio salta( "tartassare" , 3) deve restituire “ttsr”, mentre salta("barzelletta",2) deve restituire “brelta”
 
@@ -36,7 +36,7 @@
 + M1_2  Scrivere un programma che legge da standard input una stringa e ne stampa la lunghezza, i primi 2 caratteri, dal secondo carattere in poi, la posizione della 
         prima 'a'.
 + M1_3  Scrivere un programma che legge da standard input una stringa e una sua sottostringa e stampa la posizione della sottostringa nella 
-        stringa (cioe` la posizione a partire dalla quale si trova la sottostringa).
+        stringa (cioè la posizione a partire dalla quale si trova la sottostringa).
 + M1_4  Scrivere un programma che legge da standard input una riga di parole e stampa la prima parola.
 + M1_5  Scrivere un programma che legge da standard input due numeri interi, li salva in due variabili e stampa il contenuto delle due variabili, 
         poi scambia il contenuto della prima variabile con il contenuto della seconda variabile e di nuovo stampa.
@@ -48,8 +48,8 @@
 
 ### Parte 2 : operatori di confronto (==, !=, >, >=, ...), operatori booleani (!, &&, ||), metodi equals e compareTo , if e switch.
 
-+ M2_1  Scrivere un programma che chiede all'utente il nome. Poi, se il nome e` "Gianni", stampa "Ciao, Gianni!", altrimenti stampa "non ti conosco".
-+ M2_2  Scrivere un programma che controlla la validita` dei dati di inizio e fine di un impegno e stampa un messaggio solo nel caso la fine preceda l'inizio. A fine 
++ M2_1  Scrivere un programma che chiede all'utente il nome. Poi, se il nome è "Gianni", stampa "Ciao, Gianni!", altrimenti stampa "non ti conosco".
++ M2_2  Scrivere un programma che controlla la validità dei dati di inizio e fine di un impegno e stampa un messaggio solo nel caso la fine preceda l'inizio. A fine 
         esecuzione il programma deve stampare "STOP".
 + M2_3  Scrivere un programma che legge una parola e, a seconda della sua lunghezza dice se ha : piu , meno o esattamente x caratteri.
 + M2_4  Scrivere un programma che legge una parola e, a seconda della lettera con cui finisce dice se è maschile e femminile , plurale o singolare.
@@ -95,7 +95,7 @@
 + M3_3  Scrivere un programma che legge un intero; se il numero è una potenza di 2, stampa che potenza e', altrimenti stampa il messaggio "non e' una potenza di due".
 + M3_4  Scrivere un programma che legge una stringa e controlla se è composta tutta di 0; stampa "tutti zeri" o "non tutti zeri", a seconda del caso.
 + M3_5  Scrivere un programma che legge un intero positivo n e stampa n asterischi.
-+ M3_6  Scrivere un programma che somma i numeri in input da tastiera e stampa il risultato. Il programma si ferma quando il numero in ingresso e` zero (valore
++ M3_6  Scrivere un programma che somma i numeri in input da tastiera e stampa il risultato. Il programma si ferma quando il numero in ingresso è zero (valore
         sentinella).
 + M3_7  Scrivere un programma che somma i numeri in input da tastiera e stampa il numero di numeri letti e la somma. Il programma si ferma quando la somma raggiunge o
         supera 100
