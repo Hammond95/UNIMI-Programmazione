@@ -18,7 +18,7 @@ _All the exercises are written using Vim, to better exercise the memory not usin
 
 ### List of Contibutors
 
-+ [@zibipod](https://github.com/zibipod)
++ [@zibipod](https://github.com/zibipod) --> [@Trisonge](https://github.com/Trisonge)
 
 
 
