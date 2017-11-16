@@ -25,6 +25,37 @@
         lunghezza dispari).  Ad esempio, se la stringa è “ciao” il metodo deve restituire “ci”, mentre se la stringa è “ritardo” deve restituire “rit”.
 + B20   Scrivete un metodo statico di nome salta che data una stringa x e dato un intero r , restituisca la stringa ottenuta prendendo un carattere ogni r
         (a partire dal primo). Ad esempio salta( "tartassare" , 3) deve restituire “ttsr”, mentre salta("barzelletta",2) deve restituire “brelta”
++ B21   Calcolare tramite array la varianza di n valori.
++ B22   Data una stringa calcolare quante parole ci sono attraverso gli array.
++ B23   Leggere i cognomi di un certo numero di persone dopo aver chiesto quante persone ci sono , stampa i cognomi la cui      lunghezza è maggiore dalla media dall'ultimo al primo
++ B24   Scrivere un programma che calcola il cognome la cui lunghezza è la piu vicina possibile alla media (con gli array)
++ B25   Scrivete un programma che legga una sequenza di interi, terminata dall’intero -1, e stampi quanti sono gli interi in cui la cifra delle decine sia 5.
++ B26   Scrivete un programma che legga ripetutamente delle stringhe costituite da due parti, separate fra loro da uno spazio (l’unico spazio che compare in ciascuna stringa).  Il programma deve, dopo aver letto ciascun input, stampare il primo carattere della seconda parte seguito dall’ultimo carattere della prima parte e dalla lunghezza di quest’ultima.  Il programma termina quando la stringa letta è vuota.
++ B27    Scrivete  un  programma  che  dato  in  input  un  valore  intero n disegni  la forma indicata (il numero di righe è n).
+```
+	  	8
+	  	.*.*
+	  	..**.**
+	 	...***.***
+	  	....****.****
+	  	.....*****.*****
+	  	......******.******
+	  	.......*******.*******
+	  	........********.********
+```
++ B28   Considerate una stringa costituita da lettere minuscole (la ’z’ non compare mai) e cifre.  Scrivete un metodo statico di nome form che, presa come argomento una stringa siffatta, restituisca una stringa costruita come segue: le lettere sono spostate in avanti di una posizione nell’alfabeto e le cifre vengono moltiplicate per due (a meno che non siano maggiori di 4 nel qual caso sono lasciate inalterate).
++ B29   Fare il crivello di eratostene e fare un esercizio simile attraverso il metodo (se n ha divisori minore della sua radice non è un numero primo)
++ B30   Scrivete un programma che legga un certo numero di BigInteger(al massimo 100), terminate dalla stringa vuota, e che alla fine ne stampi il primo carattere esadecimale. Vi ricordiamo che la classe BigInteger ha un metodo di istanza toString(int b) che fornisce la rappresentazione in base b del numero su cui è invocato; tale rappresentazione è ovviamente una stringa.
++ B31   Scrivete un metodo statico di nome f che dati come argomenti due numeri interi  e  restituisca  (come double)  la  media  dei  due. Ad  esempio,  se  i numeri sono 12 e 3 dovrebbe restituire 4.5
++ B32   Scrivere  un  metodo  statico  di  nome f che  data  un  intero r ,  costruisca e  restituisca  una  stringa  fatta  concatenando r, r−1, eccetera  fino  a  1 (compreso), separati ciascuno dal successivo da una virgola, seguiti da un a-capo e da una riga analoga che parta da r−1, eccetera.  L’ultima riga deve essere costituita dal solo numero 1.  Ad esempio f(3) deve restituire 3,2,1\n2,1\n1, mentre f(5) deve restituire 5,4,3,2,1\n4,3,2,1\n3,2,1\n2,1\n1
++ B33   Leggere numero double e stamparlo arrotondato (mix di cast e if) 
++ B34   Metodo che passato un array di stringhe restituisce la stringa piu lunga 
++ B35   Data una sfera, ci viene dato il raggio in cm, e il peso in g , calcolarne il volume (4/3 pi r^3) e vedere se l'oggetto galleggia (l’ oggetto galleggia se il suo peso specifico è minore di 1 g/cm^3)
++ B36   Estrazione di una carta da un mazzo di carte da poker
++ B37   Scrivete un metodo che dato un array di interi raddoppia ogni elemento contenuto nell'array e stampa il risultato.
++ B38   Scrivere un programma che prende le stringhe passate come argomento sulla linea di comando e le stampa ribaltate (ciao = oaic)
++ B39   Scrivere un metodo che data una stringa restituisce le parole che costituiscono la stringa separate da spazi.
+
 
 
 # Lista Esercizi Assegnati dalla Prof.Morpurgo
