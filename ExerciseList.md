@@ -179,7 +179,30 @@
         (una o più righe, si ferma a EOF) e visualizza il testo in farfallino.
 + M4_9  Implementare una classe CodiceFiscale che disponga di un metodo String CFcognome(String testo) che restituisce la parte di codice fiscale relativa al cognome,
         un metodo String CFcnome(String testo) che restituisce la parte di codice fiscale relativa al nome, un metodo main che chiede nome e cognome e visualizza 
-        la prima parte del codice fiscale. 
+        la prima parte del codice fiscale.
+
+### Parte 5 : uso di array e ArrayList.
+
++ M5_1    Scrivere un programma che legge da tastiera un numero telefonico come stringa e conta il numero di volte che ogni cifra appare nel numero.
++ M5_2    Scrivere un programma che inserisce man mano parole in un ArrayList in modo che siano sempre in ordine alfabetico. Il programma legge le parole ridirigendo l'input da un file (java Programma < file). La parola "quit" indica dove terminare la lettura. Dopo ogni inserimento il programma stampa il contenuto dell'ArrayList.
++ M5_3    Scrivere un programma che (implementare un punto alla volta, compilando e testanto il programma prima di passare al successivo) utilizzare il metodo statico Arrays.toString(array) per visualizzarei voti)
+   1. legge da standard input una sequenza di al piu' 10 voti separati da uno spazio e terminati da -1 (Es. 28 26 22 27 30 26 24 25 -1) e li salva in un array di dimensione 10
+   2. li stampa a video con un ciclo for sul numero di elementi effettivamente letti, prelevando i valori a uno a uno dall'array
+   3. li stampa a video utilizzando il costrutto for-each (c'è differenza?)
+   4. calcola la somma e il voto medio e li stampa
+   5. determina il numero di voti maggiori o uguali alla media e lo stampa
+   6. cerca la prima occorrenza di 22 e stampa "trovato (pos)" dove pos è la sua posizione, se c'è, e "non trovato (-1)" altrimenti
+   7. copia i voti in un array di lunghezza 20 ( Arrays.copyOf(array, size) ) 
++ M5_4  Scrivere un programma che fa le seguenti operazioni e, dopo ciascuna, stampa gli elementi contenuti nell'ArrayList:
+   1. legge da standard input una sequenza di (almeno 5) double (punteggi) separate da uno spazio e terminata da -1 e li salva in un ArrayList
+   2. elimina il punteggio in posizione 3
+   3. sostituisce il punteggio in posizione 2 con l'ultimo
+   4. inserisce il punteggio 4.5 alla fine della sequenza
+   5. inserisce il punteggio 3.2 in posizione 1
+   6. elimina il punteggio minimo
++ M5_5  Scrivere un programma che legge da linea di comando una serie di parole e  stampa solo quelle di lunghezza pari in ordine inverso (arg[0] per ultima)
++ M5_6  Scrivere un programma che legge una sequenza di parole e le visualizza in ordine alfabetico, una per riga.
+
 
 
 # Link utili
