@@ -10,13 +10,8 @@ public class CurvaDiKoch
 	private TurtleFrame tf = null;
 	private Playground pg = null;
 	private Turtle koch = null;
-	private int len=1;
 
-	public CurvaDiKoch()
-	{	this(360);
-	}
-
-	public CurvaDiKoch(int len){
+	public CurvaDiKoch(){
 		// Create Frame based on Screen Size
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 		int width  = (int) screenSize.getWidth() - 100;
@@ -25,23 +20,12 @@ public class CurvaDiKoch
 		this.pg = this.tf.getPlayground();
 		this.koch = new Turtle(this.tf);
 		this.pg.add(this.koch);
-		setLen(len);
 	}
 
-
-	public void setLen(int len){
-		if(len>0)
-			this.len=len;
-	}
-
-	public int getLen(){
-		return this.len;
-	}
 
 	public Turtle getKoch(){
 		return this.koch;
 	}
-
 
 	public void kochcurve(int lun, int liv){
 		if(liv==0){
@@ -58,10 +42,31 @@ public class CurvaDiKoch
 		}
 		
 	}
+	
+	/* Koch Snowflake Based build upon a triangle */
+	public void kochSFT(int lun, int liv){
+		getKoch().right(30);
+		kochcurve(lun,liv);
+		getKoch().right(120);
+		kochcurve(lun,liv);
+		getKoch().right(120);
+		kochcurve(lun,liv);
+	}
+	
+	/* Koch Snowflake Based build upon a square */
+	public void kochSFS (int lun, int liv){
+		getKoch().right(45);
+		kochcurve(lun,liv);
+		getKoch().right(90);
+		kochcurve(lun,liv);
+		getKoch().right(270);
+		kochcurve(-lun,liv);
+		getKoch().right(90);
+		kochcurve(-lun,liv);
+	}
 
 	public static void main(String[] args)
-	{	
-		int size=6;
+	{	int size=6;
 		int level=3;
 		if(args.length>1){
 			try {
@@ -72,17 +77,22 @@ public class CurvaDiKoch
 			}
 		}
 
-		
+				
+
+
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 		int x = 10;
 		int y = (int) screenSize.getHeight() - 100;
-		Point p = new Point(x,y);
-
+		
+		Point p = new Point(500,500);
+		
 		CurvaDiKoch k = new CurvaDiKoch();
 		k.getKoch().setScreenPos(p);
 		k.getKoch().hideTurtle();
 		k.getKoch().right(90);
-		k.kochcurve(size,level);
+		k.kochSFT(size,level);
+		k.getKoch().left(90);
+		k.kochSFT(--size,level);
 
 	}
 
