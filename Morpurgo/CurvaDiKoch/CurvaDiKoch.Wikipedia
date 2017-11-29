@@ -1,0 +1,16 @@
+### La Curva di Koch
+
+La curva di Koch è una delle prime curve frattali di cui si conosca una descrizione. 
+Apparve per la prima volta su un documento del 1904 intitolato Sur une courbe continue sans tangente, 
+obtenue par une construction géométrique élémentaire del matematico svedese Helge von Koch.
+
+La generazione della curva di Koch avviene grazie all'esecuzione ripetuta di un programma di istruzioni o procedura ricorsiva: 
+è una procedura perché precisamente definita da un numero finito di passi, è ricorsiva perché viene ripetuta meccanicamente. 
+L'algoritmo della curva consiste nella ripetizione del ciclo sottostante:
+
+    Partendo da un segmento di determinata lunghezza
+        dividere il segmento in tre segmenti uguali;
+        cancellare il segmento centrale, sostituendolo con due segmenti identici che costituiscono i due lati di un triangolo equilatero;
+        tornare al punto 1 per ognuno degli attuali segmenti.
+        
+ 
