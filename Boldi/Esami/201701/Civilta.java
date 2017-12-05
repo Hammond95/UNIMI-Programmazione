@@ -5,7 +5,7 @@ public class Civilta {
 	private String nome="";
 	private ArrayList <Citta> colonie = null;
 	private int tesoro;
-	private ArrayList<Risorsa> stock = null;
+	private ArrayList <Risorsa> stock = null;
 
 	public Civilta (String nome){
 		this.nome = nome.toUpperCase();
