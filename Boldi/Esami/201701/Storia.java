@@ -92,7 +92,7 @@ public class Storia {
 	public void conquista(){
 		Civilta cr = piuRicca();
 		Civilta cp = piuPovera();
-		
+		//TO DO: Check if cr or cp is null
 		if(cr.getTesoro()!=cp.getTesoro()){
 			ArrayList<Citta> colonieCP = cp.getColonie();
 			if(!colonieCP.isEmpty()){
@@ -113,6 +113,5 @@ public class Storia {
 				cp.rimuoviCitta(colonieCP.get(cittaMin));
 			}
 		}
-
 	}
 }
