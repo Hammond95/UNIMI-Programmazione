@@ -33,7 +33,7 @@ public class SortParole {
 						StringBuilder sb = new StringBuilder();
 						/* Reading Input until CTRL-D is pressed */
 						while(in.hasNext())
-						{	   String line = in.nextLine();
+						{		String line = in.nextLine();
 								sb.append(line+" ");
 						}
 						in.close();
