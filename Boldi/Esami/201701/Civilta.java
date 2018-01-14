@@ -1,6 +1,3 @@
-import java.io.*;
-import java.util.*;
-
 public class Civilta {
 	private String nome="";
 	private ArrayList <Citta> colonie = null;
@@ -22,6 +19,11 @@ public class Civilta {
 		} else {
 			return false;
 		}
+	}
+
+	@Override
+	public int hashCode(){
+		return this.nome.length();
 	}
 
 	public ArrayList<Citta> getColonie(){
