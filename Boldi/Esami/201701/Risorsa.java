@@ -24,6 +24,11 @@ public class Risorsa {
 		}
 	}
 
+	@Override
+    	public int hashCode(){
+        	return this.nome.length();
+    	}
+
 	public String getNome(){
 		return this.nome;
 	}
