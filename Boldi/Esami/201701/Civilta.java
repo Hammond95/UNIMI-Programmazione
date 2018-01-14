@@ -5,7 +5,7 @@ public class Civilta {
 	private String nome="";
 	private ArrayList <Citta> colonie = null;
 	private int tesoro;
-	private ArrayList <Risorsa> stock = null;
+	private ArrayList<Risorsa> stock = null;
 
 	public Civilta (String nome){
 		this.nome = nome.toUpperCase();
@@ -13,9 +13,15 @@ public class Civilta {
 		this.tesoro = 0;
 		this.stock = new ArrayList<Risorsa>();
 	}
-
-	public boolean equals (Civilta c){
-		return (this.nome.equals(c.nome));
+	
+	@Override
+	public boolean equals (Object c){
+		if(c instanceof Civilta){
+			Civilta civ = (Civilta) c;
+			return (this.nome.equals(civ.nome));
+		} else {
+			return false;
+		}
 	}
 
 	public ArrayList<Citta> getColonie(){
@@ -100,7 +106,4 @@ public class Civilta {
 			System.out.println("    "+c.toString());	
 		System.out.println("-------------------------------------");
 	}
-	
-	
-
 }
