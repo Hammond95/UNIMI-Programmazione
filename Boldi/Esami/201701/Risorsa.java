@@ -13,9 +13,15 @@ public class Risorsa {
 	public Risorsa(Risorsa r){
 		this(r.getNome(),r.getPrezzo());
 	}
-
-	public boolean equals(Risorsa r){
-		return (this.nome == r.nome);
+	
+	@Override
+	public boolean equals(Object r){
+		if(r instanceof Risorsa){
+			Risorsa ris = (Risorsa) r;
+			return (this.nome.equals(ris.nome));
+		} else {
+			return false;
+		}
 	}
 
 	public String getNome(){
