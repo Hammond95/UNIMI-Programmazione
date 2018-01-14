@@ -1,7 +1,3 @@
-import java.io.*;
-import java.util.*;
-
-
 public class Storia {
 	
 	ArrayList<Civilta> lisCiv = null;
@@ -12,7 +8,7 @@ public class Storia {
 
 	public void commercia(Civilta c){
 		for (Civilta k : lisCiv){
-			if(!c.equals(k)){
+			if(!c.equals((Object) k)){
 				if(c.vendiRisorseA(k)){
 					break;
 				}
@@ -92,7 +88,7 @@ public class Storia {
 	public void conquista(){
 		Civilta cr = piuRicca();
 		Civilta cp = piuPovera();
-		//TO DO: Check if cr or cp is null
+		
 		if(cr.getTesoro()!=cp.getTesoro()){
 			ArrayList<Citta> colonieCP = cp.getColonie();
 			if(!colonieCP.isEmpty()){
