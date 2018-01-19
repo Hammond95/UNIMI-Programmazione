@@ -91,6 +91,7 @@ Parola?
 	fenicottero
 Verme?  
 	ape
+	
 F + A = F
 E + P = T
 N + E = R
@@ -111,6 +112,7 @@ Parola?
 	accalappiafantasmi
 Verme?  
 	verme
+	
 A + V = V
 C + E = G
 C + R = T
@@ -144,32 +146,32 @@ eseguendo le rotazioni in senso opposto (attenzione ai valori negativi).
 Oppure,  si puo' usare il programma Vigenere usando come chiave un 
 "antiverme" ottenuto  applicando le seguenti sostituzioni al verme:
 
-   A ---> A
-   B ---> Z
-   C ---> Y
-   D ---> X
-   E ---> W
-   F ---> V
-   G ---> U
-   H ---> T
-   I ---> S
-   J ---> R
-   K ---> Q
-   L ---> P
-   M ---> O
-   N ---> N
-   O ---> M
-   P ---> L
-   Q ---> K
-   R ---> J
-   S ---> I
-   T ---> H
-   U ---> G
-   V ---> F
-   W ---> E	
-   X ---> D
-   Y ---> C
-   Z ---> B
+	A ---> A
+	B ---> Z
+	C ---> Y
+	D ---> X
+	E ---> W
+	F ---> V
+	G ---> U
+	H ---> T
+	I ---> S
+	J ---> R
+	K ---> Q
+	L ---> P
+	M ---> O
+	N ---> N
+	O ---> M
+	P ---> L
+	Q ---> K
+	R ---> J
+	S ---> I
+	T ---> H
+	U ---> G
+	V ---> F
+	W ---> E
+	X ---> D
+	Y ---> C
+	Z ---> B
 
 Si noti che la seconda colonna  dal basso verso l'alto
 contiene le lettere dell'alfabeto ruotate di uno.
