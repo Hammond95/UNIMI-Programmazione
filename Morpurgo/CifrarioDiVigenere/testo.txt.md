@@ -11,41 +11,36 @@ lettere maiuscole.
 
 Date due lettere maiuscole L1 e L2, scriviamo
 
-  L1 + L2 = LROT
+ 	L1 + L2 = LROT
 
 per indicare che la lettera LROT e' ottenuta ruotando L1 del 
 numero di posti corrispondenti alla posizione di L2 nell'alfabeto 
 (vedi Esercizio 1).
 
 Ad esempio
-
-  C + B = D
+	
+	C + B = D
 
 in quanto B ha posizione 1 e ruotando C di 1 si ottiene D.
 
 Analogamente:
 
-   X + A = X   // A ha posizione 0
-   X + B = Y
-   X + C = Z
-   X + D = A 
-   X + E = B
-
+	X + A = X   // A ha posizione 0
+	X + B = Y
+	X + C = Z
+	X + D = A 
+	X + E = B
 
 La cifratura avviene come segue.
 
-Supponiamo che la parola in chiaro da cifrare sia
-
-   ACCALAPPIAFANTASMI
-
+Supponiamo che la parola in chiaro da cifrare sia ACCALAPPIAFANTASMI
 e il verme sia VERME.
 
 Scriviamo sotto la parola il verme tante volte quanto basta
 per coprirne la lunghezza  (eventualmente l'ultimo verme e' troncato)
 
-  ACCALAPPIAFANTASMI
-  VERMEVERMEVERMEVER
-
+	ACCALAPPIAFANTASMI
+	VERMEVERMEVERMEVER
 
 La parola cifrata si ottiene  "sommando"  le lettere  sulla stessa colonna.
 
@@ -70,10 +65,7 @@ Poiche'
 	M + E = Q
 	I + R = Z
 
-la parola cifrata e'
-
-VGTMPVTGUEAEEFENQZ
-
+la parola cifrata e' VGTMPVTGUEAEEFENQZ
 
 Scrivere un programma Vigenere che legge la parola da cifrare e 
 il verme, trasformando tutte le lettere in maiuscole.
@@ -87,50 +79,46 @@ ripetizoni del verme.
 ESEMPI
 -----
 
-Parola? 
-	fenicottero
-Verme?  
-	ape
+Parola? fenicottero
+Verme?  ape
 	
-F + A = F
-E + P = T
-N + E = R
-I + A = I
-C + P = R
-O + E = S
-T + A = T
-T + P = I
-E + E = I
-R + A = R
-O + P = D
+	F + A = F
+	E + P = T
+	N + E = R
+	I + A = I
+	C + P = R
+	O + E = S
+	T + A = T
+	T + P = I
+	E + E = I
+	R + A = R
+	O + P = D
 
 FTRIRSTIIRD
 
 ----------
 
-Parola? 
-	accalappiafantasmi
-Verme?  
-	verme
+Parola? accalappiafantasmi
+Verme? verme
 	
-A + V = V
-C + E = G
-C + R = T
-A + M = M
-L + E = P
-A + V = V
-P + E = T
-P + R = G
-I + M = U
-A + E = E
-F + V = A
-A + E = E
-N + R = E
-T + M = F
-A + E = E
-S + V = N
-M + E = Q
-I + R = Z
+	A + V = V
+	C + E = G
+	C + R = T
+	A + M = M
+	L + E = P
+	A + V = V
+	P + E = T
+	P + R = G
+	I + M = U
+	A + E = E
+	F + V = A
+	A + E = E
+	N + R = E
+	T + M = F
+	A + E = E
+	S + V = N
+	M + E = Q
+	I + R = Z
 
 VGTMPVTGUEAEEFENQZ
 
@@ -177,8 +165,7 @@ Si noti che la seconda colonna  dal basso verso l'alto
 contiene le lettere dell'alfabeto ruotate di uno.
 
 Ad esempio, l'antiverme di APE e'  ALW
-Codificando FTRIRSTIIRD con verme ALW si ottiene 
-FENICOTTERO.
+Codificando FTRIRSTIIRD con verme ALW si ottiene FENICOTTERO.
 
 L'antiverme di VERME e'  FWJOW
 Codificando VGTMPVTGUEAEEFENQZ con verme FWJOW si ottiene ACCALAPPIAFANTASMI
@@ -187,7 +174,6 @@ Scrivere un programma AntiVerme che, inserito un verme, stampa l'antiverme.
 
 Per determinare come va trasformata una lettere e' sufficiente scrivere
 una opportuna espressione aritmetica.
-
 
 Cosa succede codificando un verme usando come verme il suo antiverme?
 (ad esempio, codificando VERME usando come verme FWJOW, oppure APE con ALW)
