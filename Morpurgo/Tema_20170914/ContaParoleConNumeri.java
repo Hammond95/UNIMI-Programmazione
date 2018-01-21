@@ -20,51 +20,51 @@ import java.util.*;
 
 public class ContaParoleConNumeri {
 
-        public static void main (String args[]){
-                try {
-                        String input = readerUtility();
-                        int digcnt=0, sum=0, digwords=0, words=0;
-                        boolean flagw=false;
-                        for(int i=0; i<input.length(); i++){
-                                if(input.charAt(i)!=' '){
-                                        flagw=false;
-                                        if(Character.isDigit(input.charAt(i))==true)
-                                                digcnt++;
-                                } else {
-                                        if(digcnt!=0){
-                                                sum+=digcnt;
-                                                digwords++;
-                                        } else if(flagw==false) words++;
-                                        digcnt=0;
-                                        flagw=true;
-                                }
-                        }
+	public static void main (String args[]){
+		try {
+			String input = readerUtility();
+			int digcnt=0, sum=0, digwords=0, words=0;
+			boolean flagw=false;
+			for(int i=0; i<input.length(); i++){
+				if(input.charAt(i)!=' '){
+					flagw=false;
+					if(Character.isDigit(input.charAt(i))==true)
+						digcnt++;
+				} else {
+					if(digcnt!=0){
+						sum+=digcnt;
+						digwords++;
+					} else if(flagw==false) words++;
+					digcnt=0;
+					flagw=true;
+				}
+			}
 
-                        System.out.println("parole con cifre: "+digwords);
-                        System.out.println("parole senza cifre "+words);
-                        System.out.println("numero totale di cifre "+sum);
+			System.out.println("parole con cifre: "+digwords);
+			System.out.println("parole senza cifre "+words);
+			System.out.println("numero totale di cifre "+sum);
 
-                } catch (Exception e){
-                        System.out.println("Something went wrong!");
-                }
+		} catch (Exception e){
+			System.out.println("Something went wrong!");
+		}
 
-        }
+	}
 
-        public static String readerUtility() throws Exception {
-                Scanner in = new Scanner(System.in);
-                StringBuilder sb = new StringBuilder();
-                /* Reading Input until CTRL-D is pressed */
-                while(in.hasNext())
-                {       String line = in.nextLine();
-                        sb.append(line+" ");
-                }
-                in.close();
-                String input=sb.toString();
-                /* Converting tabs and newline to space
-                 * in order to have a single separator.*/
-                input = new String(input.replaceAll("\t"," "));
-                input = new String(input.replaceAll("$"," "));
+	public static String readerUtility() throws Exception {
+		Scanner in = new Scanner(System.in);
+		StringBuilder sb = new StringBuilder();
+		/* Reading Input until CTRL-D is pressed */
+		while(in.hasNextLine())
+		{	String line = in.nextLine();
+			sb.append(line+" ");
+		}
+		in.close();
+		String input=sb.toString();
+		/* Converting tabs and newline to space
+		 * in order to have a single separator.*/
+		input = new String(input.replaceAll("\t"," "));
+		input = new String(input.replaceAll("$"," "));
 
-                return input;
-        }
+		return input;
+	}
 }
