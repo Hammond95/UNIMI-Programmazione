@@ -1,0 +1,36 @@
+import java.io.*;
+import java.util.*;
+
+public class DisegnaRT {
+
+	public static void main(String args[]){
+		int p = 3;
+		while(p>0){
+			for(int i=0; i<args.length; i++){
+				if(args[i].equals("T")){
+					T(p);
+				}else if(args[i].equals("R")){
+					System.out.print("*****");
+				}
+				if(i!=args.length-1)
+					System.out.print("|");
+			}
+			System.out.println("");
+			p--;
+		}
+	}
+
+	private static void T(int p){
+		if(p==3){
+			System.out.print("  *  ");
+			return;
+		}
+		if(p==2){
+			System.out.print(" *** ");
+			return;
+		}
+		if(p==1){
+			System.out.print("*****");
+		}
+	}
+}
