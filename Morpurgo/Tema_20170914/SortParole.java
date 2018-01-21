@@ -32,7 +32,7 @@ public class SortParole {
 						Scanner in = new Scanner(filein);
 						StringBuilder sb = new StringBuilder();
 						/* Reading Input until CTRL-D is pressed */
-						while(in.hasNext())
+						while(in.hasNextLine())
 						{		String line = in.nextLine();
 								sb.append(line+" ");
 						}
