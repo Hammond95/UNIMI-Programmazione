@@ -17,7 +17,7 @@ public class ContaNumeri {
 		
 		Scanner in = new Scanner(System.in);
 		int cint=0, cflo=0;
-		while(in.hasNext()){
+		while(in.hasNextLine()){
 			String line = in.nextLine();
 			line = new String(line.replaceAll("\t"," "));
 			String list[] = line.split("[ ]+");
