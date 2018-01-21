@@ -1,13 +1,20 @@
 import java.io.*;
 import java.util.*;
 
+/**
+ * Given an unknown number of rows, prints them reversed 
+ * from the last to the first.
+ *
+ * @author Martin De Luca
+ **/
+
 public class RevRev {
 
 	public static void main (String args[]){
 		
 		ArrayList <String> lines = new ArrayList<String>();
 		Scanner in = new Scanner(System.in);
-		while(in.hasNext()){
+		while(in.hasNextLine()){
 			String line = in.nextLine();
 			String revline = RevRev.reverse(line);
 			lines.add(revline);
@@ -34,6 +41,5 @@ public class RevRev {
 		}
 
 		return new String(rev);
-	
 	}
 }
