@@ -13,11 +13,11 @@ public class DivideParoleMinMaiu {
 				ArrayList<String> maiu = new ArrayList<String>();
 				
 				while(sf.hasNext()){
-					String line = sf.next();
-					if(line.matches("^[A-Z][a-zA-Z]+")){
-						maiu.add(line);
-					} else if(line.matches("^[a-z][a-zA-Z]+")){
-						min.add(line);
+					String word = sf.next();
+					if(word.matches("^[A-Z][a-zA-Z]+")){
+						maiu.add(word);
+					} else if(word.matches("^[a-z][a-zA-Z]+")){
+						min.add(word);
 					}
 				}
 				
