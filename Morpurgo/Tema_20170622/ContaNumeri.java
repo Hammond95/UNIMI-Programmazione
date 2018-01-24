@@ -12,7 +12,7 @@ public class ContaNumeri {
 			if(isValidInteger(line)){
 				cint++;
 			} else if (isValidFloat(line)){
-					cflo++;
+				cflo++;
 			}
 		}
 		in.close();
