@@ -6,8 +6,8 @@ public class ParoleCrescenti {
 	public static void main (String args[]){
 		Scanner in = new Scanner(System.in);
 		int c=0;
-		while(in.hasNextLine()){
-			if(isCrescente(in.nextLine()))
+		while(in.hasNext()){
+			if(isCrescente(in.next()))
 				c++;
 		}
 		in.close();
