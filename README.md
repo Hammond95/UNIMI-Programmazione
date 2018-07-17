@@ -1,4 +1,4 @@
-# UNIMI_PROG_JAVAEXERCISES
+# UNIMI-Programmazione
 This repository contains just a bunch of exercises for the Programming Course at University [UNIMI - La Statale Milano](http://www.unimi.it/).
 
 The assignment is written in Italian :it: if you want some translation ask for it.
